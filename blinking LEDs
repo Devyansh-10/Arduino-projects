@@ -1,0 +1,24 @@
+const int nani = 7;
+const int baka = 6;
+const int sukuna = 5;
+
+void setup(){
+  pinMode(nani , OUTPUT);
+  pinMode(baka , OUTPUT);
+  pinMode(sukuna , OUTPUT);
+}
+
+void loop(){
+  digitalWrite(nani , HIGH);
+  delay(1000);
+  digitalWrite(nani, LOW);
+  delay(700);
+  digitalWrite(sukuna , HIGH);
+  delay(700);
+  digitalWrite(sukuna ,LOW);
+  delay(700);
+  digitalWrite(baka , HIGH);
+  delay(700);
+  digitalWrite(baka , LOW);
+  delay(700);
+}
