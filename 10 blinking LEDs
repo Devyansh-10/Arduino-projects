@@ -1,0 +1,66 @@
+const int baka = 13;
+const int nani = 12;
+const int noni = 11;
+const int nabi = 10;
+const int nati = 9;
+const int loli= 8;
+const int babi = 7;
+const int dadi = 6;
+const int dada = 5;
+const int baba = 4;
+
+void setup(){
+  pinMode(baka , OUTPUT);
+  pinMode(nani, OUTPUT);
+  pinMode(noni , OUTPUT);
+  pinMode(nabi, OUTPUT);
+  pinMode(nati, OUTPUT);
+  pinMode(loli, OUTPUT);
+  pinMode(babi, OUTPUT);
+  pinMode(dadi, OUTPUT);
+  pinMode(dada, OUTPUT);
+  pinMode(baba, OUTPUT);
+}
+
+void loop(){
+  digitalWrite(baka, HIGH);
+  delay(500);
+  digitalWrite(baka, LOW);
+  delay(500);
+  digitalWrite(nani, HIGH);
+  delay(500);
+  digitalWrite(nani, LOW);
+  delay(500);
+  digitalWrite(noni, HIGH);
+  delay(500);
+  digitalWrite(noni, LOW);
+  delay(500);
+  digitalWrite(nabi, HIGH);
+  delay(500);
+  digitalWrite(nabi, LOW);
+  delay(500);
+  digitalWrite(nati, HIGH);
+  delay(500);
+  digitalWrite(nati, LOW);
+  delay(500);
+  digitalWrite(loli, HIGH);
+  delay(500);
+  digitalWrite(loli, LOW);
+  delay(500);
+  digitalWrite(babi, HIGH);
+  delay(500);
+  digitalWrite(babi, LOW);
+  delay(500);
+  digitalWrite(dadi, HIGH);
+  delay(500);
+  digitalWrite(dadi, LOW);
+  delay(500);
+  digitalWrite(dada, HIGH);
+  delay(500);
+  digitalWrite(dada , LOW);
+  delay(500);
+  digitalWrite(baba, HIGH);
+  delay(500);
+  digitalWrite(baba, LOW);
+  delay(500);
+}
