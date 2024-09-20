@@ -1,0 +1,69 @@
+#include<Servo.h>
+
+Servo servo1;
+Servo servo2;
+Servo servo3;
+Servo servo4;
+
+
+const int servo1Pin = 3;
+const int servo2Pin = 5;
+const int servo3Pin = 6;
+const int servo4Pin = 9;
+
+
+const int delayTime = 500;
+
+void setup() {
+
+  servo1.attach(servo1Pin);
+  servo2.attach(servo2Pin);
+  servo3.attach(servo3Pin);
+  servo4.attach(servo4Pin);
+}
+
+void loop() {
+  
+  servo1.write(0);
+  servo2.write(180);
+  servo3.write(0);
+  servo4.write(180);
+  delay(delayTime);
+
+  // Close the flower
+  servo1.write(90);
+  servo2.write(90);
+  servo3.write(90);
+  servo4.write(90);
+  delay(delayTime);
+
+  // Open the flower partially
+  servo1.write(45);
+  servo2.write(135);
+  servo3.write(45);
+  servo4.write(135);
+  delay(delayTime);
+
+  // Close the flower again
+  servo1.write(90);
+  servo2.write(90);
+  servo3.write(90);
+  servo4.write(90);
+  delay(delayTime);
+
+  // Repeat the dance
+  for (int i = 0; i < 3; i++) {
+    // Rotate servos in opposite directions
+    servo1.write(0);
+    servo2.write(180);
+    servo3.write(180);
+    servo4.write(0);
+    delay(delayTime);
+
+    servo1.write(180);
+    servo2.write(0);
+    servo3.write(0);
+    servo4.write(180);
+    delay(delayTime);
+  }
+}
