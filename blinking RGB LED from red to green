@@ -1,0 +1,34 @@
+
+// Define the RGB LED pins
+const int redPin = 9;
+const int greenPin = 10;
+const int bluePin = 11;
+
+// Time duration in seconds
+const int redTime = 5;
+const int greenTime = 7;
+
+void setup() {
+  
+  // Initialize the RGB LED pins
+  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
+}
+
+void loop() {
+  // Red light
+  setColor(255, 0, 0); // Red
+  delay(500);
+  // Green light
+  setColor(0, 255, 0); // Green
+  delay(500);
+
+
+}
+
+void setColor(int red, int green, int blue) {
+  analogWrite(redPin, red);
+  analogWrite(greenPin, green);
+  analogWrite(bluePin, blue);
+}
